@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | BrightPath Learning Center</title>
+  <meta name="description" content="Gallery of BrightPath Learning Center events, student projects, and classroom snapshots.">
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">BrightPath</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Gallery</h1>
+        <p>Browse highlights from workshops, student projects, and classroom activities at BrightPath.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Highlights</h2>
+      <p class="intro">Click any image to view a larger version and read details.</p>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="images/gallery1.jpg" alt="Students collaborating on a coding project" data-caption="Students collaborating on a coding project">
+          <figcaption>Collaborative Coding</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery2.jpg" alt="Instructor guiding a student" data-caption="Instructor guidance during a hands-on session">
+          <figcaption>Hands-on Instruction</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery3.jpg" alt="Project showcase on screens" data-caption="Student project showcase event">
+          <figcaption>Project Showcase</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery4.jpg" alt="Workshop session with mentor" data-caption="Workshop session with industry mentor">
+          <figcaption>Industry Workshop</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery5.jpg" alt="Students presenting a data dashboard" data-caption="Students presenting data dashboards built in class">
+          <figcaption>Data Dashboards</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/gallery6.jpg" alt="Graduation group photo" data-caption="Graduation and certification day at BrightPath">
+          <figcaption>Graduation Day</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <img class="lightbox-img" src="" alt="">
+      <p class="lightbox-caption"></p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BrightPath Learning Center. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Simple lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt || '';
+        lightboxCaption.textContent = img.dataset.caption || '';
+        lightbox.style.display = 'flex';
+        lightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeBtn.click();
+    });
+  </script>
+</body>
+</html>

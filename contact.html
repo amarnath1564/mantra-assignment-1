@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | BrightPath Learning Center</title>
+  <meta name="description" content="Contact BrightPath Learning Center for course inquiries, registration, and campus information.">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">BrightPath</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner-inner">
+        <h1>Contact Us</h1>
+        <p>Have questions about our courses or admissions? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2>Contact Information</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <img src="images/icon-location.svg" alt="Location icon" class="card-icon">
+          <h3>Address</h3>
+          <p>BrightPath Learning Center<br>123 Education Avenue, Hyderabad, Telangana</p>
+        </article>
+        <article class="info-card">
+          <img src="images/icon-phone.svg" alt="Phone icon" class="card-icon">
+          <h3>Phone Number</h3>
+          <p>+91 98765 43210</p>
+        </article>
+        <article class="info-card">
+          <img src="images/icon-email.svg" alt="Email icon" class="card-icon">
+          <h3>Email</h3>
+          <p><a href="mailto:info@brightpath.edu">info@brightpath.edu</a></p>
+        </article>
+        <article class="info-card">
+          <img src="images/icon-clock.svg" alt="Clock icon" class="card-icon">
+          <h3>Office Hours</h3>
+          <p>Monday – Saturday<br>9:00 AM – 6:00 PM</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Student Registration / Inquiry Form</h2>
+      <div class="form-grid">
+        <div class="form-card">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your full name">
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="10 digit phone number">
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="course">Course Interested In</label>
+              <select id="course" name="course">
+                <option value="">Select a course</option>
+                <option>Web Development</option>
+                <option>Python Programming</option>
+                <option>Data Analytics</option>
+                <option>Artificial Intelligence</option>
+                <option>Aptitude & Reasoning</option>
+                <option>Digital Marketing</option>
+              </select>
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Share your questions or comments"></textarea>
+              <small class="error-message"></small>
+            </div>
+            <button type="submit" class="btn">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section">
+      <h2>Visit Our Campus</h2>
+      <div class="location-grid">
+        <div class="map-card">
+          <iframe title="BrightPath campus location map" src="https://maps.google.com/maps?q=123%20Education%20Avenue%20Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+        </div>
+        <div class="location-details">
+          <h3>Our Hyderabad Campus</h3>
+          <p>BrightPath Learning Center is located in the heart of Hyderabad's education district.</p>
+          <ul>
+            <li>Landmark: Near Phoenix Mall</li>
+            <li>Metro Station: Hitec City Metro</li>
+            <li>Bus Stops: Education Avenue Bus Stop</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-toggle" type="button" aria-expanded="false">How can I enroll in a course?</button>
+          <div class="faq-answer">
+            <p>You can enroll by submitting the inquiry form, after which our admissions team will contact you to confirm details and start your registration.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle" type="button" aria-expanded="false">Do you offer online classes?</button>
+          <div class="faq-answer">
+            <p>Yes, BrightPath offers both online and classroom-based training depending on the course and schedule availability.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle" type="button" aria-expanded="false">Can I visit the institute before registering?</button>
+          <div class="faq-answer">
+            <p>Absolutely. We welcome campus visits during office hours. Please call or email ahead so we can prepare for your visit.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-toggle" type="button" aria-expanded="false">Are certificates provided after course completion?</button>
+          <div class="faq-answer">
+            <p>Yes, all completed courses include a certificate of completion from BrightPath Learning Center.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-contact-section">
+      <h2>Quick Contact</h2>
+      <div class="quick-grid">
+        <article class="quick-card">
+          <img src="images/icon-whatsapp.svg" alt="WhatsApp icon" class="quick-icon">
+          <h3>WhatsApp Contact</h3>
+          <p>Chat with our support team on WhatsApp.</p>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">Start Chat</a>
+        </article>
+        <article class="quick-card">
+          <img src="images/icon-email.svg" alt="Email support icon" class="quick-icon">
+          <h3>Email Support</h3>
+          <p>Send your questions directly to our inbox.</p>
+          <a href="mailto:info@brightpath.edu">Send Email</a>
+        </article>
+        <article class="quick-card">
+          <img src="images/icon-phone.svg" alt="Admission helpline icon" class="quick-icon">
+          <h3>Admission Helpline</h3>
+          <p>Call our admissions team for fast support.</p>
+          <a href="tel:+919876543210">Call Now</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-card">
+        <h2>Ready to Begin Your Learning Journey?</h2>
+        <p>Join hundreds of students building valuable skills and achieving their goals.</p>
+        <a class="btn btn-large" href="contact.html">Register Today</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>123 Education Avenue, Hyderabad, Telangana</p>
+        <p>+91 98765 43210</p>
+        <p><a href="mailto:info@brightpath.edu">info@brightpath.edu</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 BrightPath Learning Center. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const fields = {
+      fullName: { validator: value => value.trim().length > 0, message: 'Please enter your full name.' },
+      email: { validator: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value), message: 'Please enter a valid email address.' },
+      phone: { validator: value => /^\d{10}$/.test(value.trim()), message: 'Phone number must contain exactly 10 digits.' },
+      course: { validator: value => value.trim() !== '', message: 'Please select a course.' },
+      message: { validator: value => value.trim().length > 0, message: 'Please enter your message.' }
+    };
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      let valid = true;
+
+      Object.keys(fields).forEach(key => {
+        const input = form.elements[key];
+        const error = input.parentElement.querySelector('.error-message');
+        const value = input.value;
+        if (!fields[key].validator(value)) {
+          error.textContent = fields[key].message;
+          input.classList.add('invalid');
+          valid = false;
+        } else {
+          error.textContent = '';
+          input.classList.remove('invalid');
+        }
+      });
+
+      if (valid) {
+        alert('Your inquiry has been submitted. Our admissions team will contact you soon.');
+        form.reset();
+      }
+    });
+
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const active = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!active));
+        button.nextElementSibling.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -7,14 +7,22 @@
 }
 
 body{
-    background-color:#eef2ff;
+    background:#FFFFFA;
     color:#1f2937;
     line-height:1.6;
     padding-top:80px;
 }
 
+img,
+svg,
+video{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
 header{
-    background-color:#1e3a8a;
+    background:#172F39;
     position:fixed;
     top:0;
     left:0;
@@ -32,7 +40,7 @@ nav{
 }
 
 .logo{
-    color:white;
+    color:#FFFFFA;
     font-size:24px;
     font-weight:bold;
 }
@@ -48,24 +56,29 @@ nav ul li{
 }
 
 nav ul li a{
-    color:white;
+    color:#FFFFFA;
     text-decoration:none;
     transition:0.3s;
 }
 
-nav ul li a:hover{
-    color:#dbeafe;
+nav ul li a:hover,
+nav ul li a.active{
+    color:#0A9396;
 }
 
 .hero{
     padding:90px 10%;
-    background:linear-gradient(135deg, #c7d2fe 0%, #e0e7ff 100%);
+    background: #40797f;
     text-align:center;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 25px;
+    margin-bottom: 0 px;
 }
 
 .hero-text h1{
     font-size:42px;
-    color:#1e3a8a;
+    color:#FFFFFA;
     margin-bottom:15px;
 }
 
@@ -73,6 +86,7 @@ nav ul li a:hover{
     max-width:700px;
     margin:auto;
     font-size:18px;
+    color:#FFFFFA;
 }
 
 .section-block{
@@ -81,8 +95,21 @@ nav ul li a:hover{
 
 .section-block h2{
     text-align:center;
-    color:#1e3a8a;
+    color:#172F39;
     margin-bottom:25px;
+}
+
+.vision-section-block h2{
+    text-align:center;
+    color:#172F39;
+    margin-bottom:25px;
+    margin-top: 45px;
+    font-size: 30px;
+}
+
+.vision-section-block p{
+    max-width:820px;
+    margin:0 auto;
 }
 
 .section-block p{
@@ -95,28 +122,50 @@ nav ul li a:hover{
     grid-template-columns:repeat(2,minmax(220px,1fr));
     gap:20px;
 }
-
 .card{
-    background:white;
+    background:#EEECED;
     padding:22px;
     border-radius:12px;
-    box-shadow:0 4px 20px rgba(15,23,42,0.08);
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);    
     display:flex;
     flex-direction:column;
     align-items:center;
     text-align:center;
 }
+.values-section-block{
+    padding:60px 10%;
+    background-color:#8ab9bd;
+    margin:0 auto;
+    max-width:calc(100% - 24px);
+    border-radius:20px;
+}
 
+.values-section-block h2{
+    text-align:center;
+    color:#172F39;
+    margin-bottom:25px;
+}
+.values-section-block .card{
+    background:#EEECED;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
 .card-icon{
     display:block;
     width:52px;
     height:52px;
     margin-bottom:18px;
-    color:#1e3a8a;
+    color:#172F39;
+    filter: invert(15%) sepia(21%) saturate(1637%) hue-rotate(155deg) brightness(95%) contrast(93%);
 }
 
 .card h3{
-    color:#1e3a8a;
+    color:#172F39;
     margin-bottom:12px;
 }
 
@@ -133,41 +182,102 @@ nav ul li a:hover{
 }
 
 footer{
-    background:#1e3a8a;
-    color:white;
+    background:#172F39;
+    color:#FFFFFA;
     text-align:center;
     padding:20px;
     margin-top:40px;
 }
 
-@media(max-width:768px){
-    nav{
-        flex-direction:column;
+    @media(max-width:992px){
+        .section-block,
+        .values-section-block{
+            padding:50px 6%;
+        }
+
+        .about-grid{
+            grid-template-columns:1fr;
+        }
+
+        .stats{
+            flex-direction:column;
+        }
     }
 
-    nav ul{
-        margin-top:15px;
-        flex-wrap:wrap;
-        justify-content:center;
+    @media(max-width:768px){
+        nav{
+            flex-direction:column;
+        }
+
+        nav ul{
+            margin-top:15px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        nav ul li{
+            margin:8px;
+        }
+
+        .hero{
+            padding:70px 5%;
+        }
+
+        .hero-text h1{
+            font-size:34px;
+        }
+
+        .section-block,
+        .values-section-block{
+            padding:40px 5%;
+        }
+
+        .about-grid{
+            grid-template-columns:1fr;
+        }
     }
 
-    nav ul li{
-        margin:8px;
+    @media(max-width:600px){
+        .hero-text h1{
+            font-size:30px;
+        }
+
+        .section-block,
+        .values-section-block{
+            padding:30px 4%;
+        }
+
+        .card{
+            padding:18px;
+        }
     }
 
-    .hero{
-        padding:70px 5%;
-    }
+    @media(max-width:480px){
+        nav{
+            flex-direction:column;
+        }
 
-    .hero-text h1{
-        font-size:34px;
-    }
+        nav ul{
+            justify-content:center;
+        }
 
-    .section-block{
-        padding:40px 5%;
-    }
+        .hero{
+            padding:50px 4%;
+        }
 
-    .about-grid{
-        grid-template-columns:1fr;
+        .hero-text h1{
+            font-size:28px;
+        }
+
+        .about-grid{
+            gap:16px;
+        }
+
+        .card{
+            padding:16px;
+        }
+
+        footer{
+            padding:24px 12px;
+        }
     }
-}

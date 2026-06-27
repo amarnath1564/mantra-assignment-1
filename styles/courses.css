@@ -7,14 +7,22 @@
 }
 
 body{
-    background:#eef2ff;
+    background:#FFFFFA;
     color:#1f2937;
     line-height:1.6;
     padding-top:80px;
 }
 
+img,
+svg,
+video{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
 header{
-    background:#1e3a8a;
+    background:#172F39;
     position:fixed;
     top:0;
     left:0;
@@ -32,7 +40,7 @@ nav{
 }
 
 .logo{
-    color:#fff;
+    color:#FFFFFA;
     font-size:24px;
     font-weight:bold;
 }
@@ -48,7 +56,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color:#fff;
+    color:#FFFFFA;
     text-decoration:none;
     font-weight:500;
     transition:color 0.3s ease;
@@ -56,17 +64,20 @@ nav ul li a{
 
 nav ul li a:hover,
 nav ul li a.active{
-    color:#dbeafe;
+    color:#0A9396;
 }
 
 .banner{
-    background:linear-gradient(135deg, #dbeafe 0%, #c7d2fe 100%);
+    background:#40797f;
     padding:120px 10% 80px;
     text-align:center;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 25px;
 }
 
 .banner h1{
-    color:#1e3a8a;
+    color:#FFFFFA;
     font-size:48px;
     margin-bottom:18px;
 }
@@ -75,7 +86,7 @@ nav ul li a.active{
     max-width:760px;
     margin:0 auto;
     font-size:18px;
-    color:#334155;
+    color:#FFFFFA;
 }
 
 section{
@@ -84,7 +95,7 @@ section{
 
 section h2{
     text-align:center;
-    color:#1e3a8a;
+    color:#172F39;
     margin-bottom:32px;
 }
 
@@ -96,12 +107,12 @@ section h2{
 }
 
 .course-card{
-    background:#fff;
+    background:#EEECED;
     width:100%;
     max-width:320px;
     padding:28px;
     border-radius:16px;
-    box-shadow:0 16px 32px rgba(15,23,42,0.08);
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -110,8 +121,8 @@ section h2{
 }
 
 .course-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 24px 40px rgba(15,23,42,0.12);
+    transform:translateY(5px);
+    box-shadow:0px 0px 30px #40797f;
 }
 
 .course-icon{
@@ -121,12 +132,12 @@ section h2{
 }
 
 .course-card h3{
-    color:#1e3a8a;
+    color:#172F39;
     margin-bottom:14px;
 }
 
 .course-card p{
-    color:#475569;
+    color:#172F39;
     margin-bottom:18px;
 }
 
@@ -134,7 +145,7 @@ section h2{
     width:100%;
     list-style:none;
     margin-bottom:22px;
-    color:#334155;
+    color:#172F39;
     text-align:left;
 }
 
@@ -145,8 +156,9 @@ section h2{
 
 .btn{
     display:inline-block;
-    background:#1e3a8a;
-    color:#fff;
+    background:#40797f;
+    border: 2px solid #40797f ;
+    color:#EEECED;
     text-decoration:none;
     padding:12px 24px;
     border-radius:8px;
@@ -154,7 +166,8 @@ section h2{
 }
 
 .btn:hover{
-    background:#172554;
+    background:#EEECED;
+    color:#172F39;
     transform:translateY(-2px);
 }
 
@@ -171,41 +184,13 @@ table{
 th,
 td{
     padding:18px 16px;
-    border:1px solid rgba(30,58,138,0.15);
+    border:1px solid #8ab9bd;
 }
 
 th{
-    background:#e0e7ff;
-    color:#1e3a8a;
+    background:#8ab9bd;
+    color:#172F39;
     text-align:left;
-}
-
-tbody tr:nth-child(even){
-    background:#f8fafc;
-}
-
-.testimonial-grid{
-    display:flex;
-    flex-wrap:wrap;
-    gap:24px;
-    justify-content:center;
-}
-
-.testimonial-card{
-    background:#fff;
-    max-width:320px;
-    padding:26px;
-    border-radius:16px;
-    box-shadow:0 16px 28px rgba(15,23,42,0.08);
-}
-
-.testimonial-card p{
-    color:#334155;
-    margin-bottom:18px;
-}
-
-.testimonial-card h3{
-    color:#1e3a8a;
 }
 
 .faq-list{
@@ -224,7 +209,7 @@ tbody tr:nth-child(even){
 .faq-toggle{
     width:100%;
     padding:18px 24px;
-    background:#1e3a8a;
+    background:#40797f;
     color:#fff;
     border:none;
     text-align:left;
@@ -258,16 +243,17 @@ tbody tr:nth-child(even){
 }
 
 .faq-answer p{
-    color:#334155;
+    color:#172F39;
 }
 
 .cta{
-    background:#1e3a8a;
-    color:#fff;
+    background:#8ab9bd;
+    color:#172F39;
     padding:60px 10%;
     text-align:center;
     border-radius:20px;
-    margin-bottom:40px;
+    margin:0 auto 40px;
+    max-width:920px;
 }
 
 .cta h2{
@@ -286,12 +272,13 @@ tbody tr:nth-child(even){
     flex-direction:column;
     align-items:center;
     gap:18px;
+    justify-content: center;
 }
 
 .cta-title{
     font-size:48px;
     margin:0;
-    color:#fff;
+    color:#172F39;
     line-height:1.05;
     font-weight:700;
     text-align:center;
@@ -299,7 +286,7 @@ tbody tr:nth-child(even){
 }
 
 footer{
-    background:#1e3a8a;
+    background:#172F39;
     color:white;
     text-align:center;
     padding:20px;
@@ -357,10 +344,6 @@ footer{
 }
 
 @media(max-width:480px){
-    .banner h1{
-        font-size:30px;
-    }
-
     nav{
         flex-direction:column;
         gap:12px;
@@ -370,8 +353,33 @@ footer{
         justify-content:center;
     }
 
+    .banner{
+        padding:80px 5% 45px;
+    }
+
+    .banner h1{
+        font-size:30px;
+    }
+
+    .course-grid,
+    .testimonial-grid{
+        gap:18px;
+    }
+
+    .course-card{
+        max-width:100%;
+    }
+
     .course-card ul,
     .course-card p{
         font-size:15px;
+    }
+
+    .cta{
+        padding:40px 6%;
+    }
+
+    .btn-large{
+        width:100%;
     }
 }

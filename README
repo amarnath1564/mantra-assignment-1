@@ -1,0 +1,112 @@
+# 🎓 BrightPath Learning Center
+
+BrightPath Learning Center is a responsive educational website developed as part of the **MANTRA 2026 Summer School – Frontend Website Assignment**. The project demonstrates the fundamentals of frontend web development, responsive design, SEO, and website deployment.
+
+## 🌐 Live Demo
+
+**Website:** https://mantra-asssignment-one.netlify.app/home
+
+## 📖 Project Overview
+
+BrightPath Learning Center is a fictional educational institute website designed to provide visitors with information about courses, faculty, learning resources, and admissions. The website follows a clean and modern design while maintaining simplicity and usability.
+
+## ✨ Features
+
+* Responsive design for desktop, tablet, and mobile devices
+* Multi-page website with consistent navigation
+* Modern educational theme
+* Course listings with pricing and details
+* Image gallery
+* Contact and registration form
+* JavaScript form validation
+* Semantic HTML5 structure
+* Basic SEO implementation
+* Flexbox-based layouts
+* Clean and user-friendly interface
+
+## 📄 Website Pages
+
+* Home
+* About
+* Courses
+* Gallery
+* Contact
+
+## 🛠️ Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Flexbox
+* GitHub
+* Netlify
+
+## 📱 Responsive Design
+
+The website has been designed to work seamlessly across different screen sizes, including:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile Devices
+
+## 🔍 SEO Features
+
+* Optimized page titles
+* Meta descriptions
+* Semantic heading structure
+* Meaningful image alt attributes
+* Simple and descriptive page names
+
+## 📂 Project Structure
+
+```text
+BrightPath/
+│
+├── home.html
+├── about.html
+├── courses.html
+├── gallery.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│
+└── README.md
+```
+
+## 🚀 Deployment
+
+The project is hosted using **Netlify**, and the source code is maintained on **GitHub**.
+
+## 🎯 Learning Outcomes
+
+This project helped strengthen my understanding of:
+
+* Semantic HTML
+* CSS Flexbox layouts
+* Responsive web design
+* JavaScript interactivity
+* Basic Search Engine Optimization (SEO)
+* GitHub version control
+* Netlify deployment
+
+## 📸 Screenshots
+
+You can add screenshots of the Home, Courses, Gallery, and Contact pages here after uploading them to your repository.
+
+## 👨‍💻 Author
+
+**Seepareddy Amarnath**
+
+MANTRA 2026 Summer School
+Frontend Website Assignment
+
+---
+
+*This project was created for educational purposes as part of the MANTRA 2026 Summer School Frontend Website Assignment.*
